@@ -27,8 +27,8 @@ a {
 }
 
 .logo {
-  max-width: 9%;
-  max-height: 9%;
+  max-width: 9vw;
+  max-height: 9vh;
   padding: 5px 10px;
   float: left;
   position: fixed;
@@ -71,33 +71,40 @@ input {
   background-color: #fff;
   box-shadow: 0px 5px 30px #919191;
   z-index: 1;
-  top: 6rem;
+  top: 4rem;
 }
 
-.sidebar-socials * {
+.sidebar-socials ul {
   position: fixed;
+  top: 54rem;
+  padding: 3;
+  z-index: 2;
+  column-count: 3;
   list-style: none;
-  z-index: 3;
-  font-size: 2rem;
-  color: #23405e;
-  top: 55rem;
-  display: inline-block;
-  margin-right: 1rem;
   background-color: #ececec;
-  min-width: 5rem;
+  width: 10.9%;
+  height: 10%;
+  color: #23405e;
 }
 
-.sidenav * {
-  list-style: none;
+.socials {
+  padding-top: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.navigation {
+  max-width: 80px;
+  padding: 2rem;
+}
+
+.sidenav ul {
   position: fixed;
-  z-index: 3;
-  left: 0;
-  top: 20rem;
-  max-width: 4rem;
-  display: grid;
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
+  top: 10rem;
+  padding: 0;
+  z-index: 2;
+  column-count: 2;
+  list-style: none;
+  max-width: 10vw;
 }
 
 nav {
@@ -130,7 +137,7 @@ nav {
 
 .header-txt {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 55%;
   transform: translate(-50%, -50%);
   display: block;
@@ -146,24 +153,82 @@ nav {
   font-size: 1.2vw;
   text-transform: uppercase;
   padding: 13px 4%;
-  position: relative;
-  top: 10%;
-  left: 7%;
+  position: absolute;
+  left: 50%;
+  top: 70%;
   z-index: 3;
 }
 
 .center-box {
   position: absolute;
   width: 70%;
-  height: 100%;
+  height: 98rem;
   background-color: #fff;
   box-shadow: 0px 5px 30px #919191;
   z-index: 1;
-  top: 43rem;
+  top: 15rem;
   margin-left: 22%;
   margin-right: 20%;
 }
 
 .product-home img {
   max-height: 200px;
+}
+
+.product-home .popular {
+  position: relative;
+  z-index: 3;
+  margin-top: 45%;
+  font-size: 1vw;
+  background-color: #23405e;
+  padding: 0.5rem 0 0.5rem 2rem;
+  color: #c4c4c4;
+  text-transform: uppercase;
+  width: 40%;
+}
+
+.popular-products {
+  display: inline-block;
+  padding: 2rem;
+  margin-left: 2.2rem;
+}
+
+.popular-products p {
+  background-color: #23405e;
+  color: #c4c4c4;
+  text-align: center;
+  padding: 0.5rem;
+  display: inline-block;
+  width: 39.7%;
+  margin-top: -1rem;
+  font-weight: 600;
+}
+
+.product-home .recent {
+  position: relative;
+  z-index: 3;
+  margin-top: 10%;
+  font-size: 1vw;
+  background-color: #23405e;
+  padding: 0.5rem 0 0.5rem 2rem;
+  color: #c4c4c4;
+  text-transform: uppercase;
+  width: 40%;
+}
+
+.recent-products {
+  display: inline-block;
+  padding: 2rem;
+  margin-left: 2.2rem;
+}
+
+.recent-products p {
+  background-color: #23405e;
+  color: #c4c4c4;
+  text-align: center;
+  padding: 0.5rem;
+  display: inline-block;
+  width: 39.7%;
+  margin-top: -1rem;
+  font-weight: 600;
 }
