@@ -7,11 +7,6 @@ body {
   font-size: 1rem;
 }
 
-a {
-  text-decoration: none;
-  color: #575757;
-}
-
 .wrapper {
   display: grid;
   min-height: 100vh;
@@ -19,7 +14,12 @@ a {
   grid-template-rows: auto 1fr;
 }
 
+/* Top logo + navigation */
+
 header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background: #ececec;
   grid-column: 1/-1;
   box-shadow: 5px 5px 10px #919191;
@@ -28,24 +28,20 @@ header {
 }
 
 .logo {
-  max-width: 20%;
-  max-height: 9vh;
-  min-width: 9vh;
+  width: 150px;
   padding: 5px 10px;
-  float: left;
 }
 
-.topnav {
-  color: #23405e;
-  right: 3rem;
-  top: 1.7rem;
+.icons,
+.icons a {
+  display: flex;
   font-size: 2rem;
+  color: #23405e;
+  margin-right: 40px;
 }
 
-.topnav a {
-  color: #23405e;
-  padding: 2rem;
-  float: right;
+.icons :last-child {
+  margin-right: 0;
 }
 
 .searchbar {
@@ -58,8 +54,6 @@ header {
   margin: 2rem;
   border-radius: 2rem;
   color: #23405e;
-  float: right;
-  right: 0%;
   font-size: 1rem;
 }
 
@@ -67,12 +61,37 @@ input {
   margin: 0 0.5rem 0 0.5rem;
   font-size: 1rem;
   padding: 0;
-  width: 1000%;
-  top: 2.5rem;
+  width: 100%;
   border: none;
   outline: none;
   color: #575757;
 }
+
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-top: 10px;
+  }
+
+  .icons {
+    margin: auto;
+    margin-top: -5px;
+    padding-bottom: 10px;
+  }
+
+  .searchbar {
+    width: 50%;
+  }
+
+  input {
+    font-size: 0.8rem;
+  }
+}
+
+/* Sidebar navigation */
 
 nav {
   background: #fff;
@@ -81,6 +100,11 @@ nav {
   text-align: center;
   position: relative;
   z-index: 1;
+}
+
+nav a {
+  text-decoration: none;
+  color: #575757;
 }
 
 .navigation {
@@ -115,11 +139,14 @@ nav ul {
   margin-left: 1rem;
 }
 
+/* Main Content */
+
 main {
   background: #f8f8f8;
 }
 
-.cta-button {
+.cta-button,
+.cta-button a {
   margin: auto;
   background: #e00087;
   color: #fff;
@@ -129,7 +156,8 @@ main {
   padding: 15px;
   display: flex;
   justify-content: center;
-  max-width: 19vw;
+  width: 170px;
+  text-decoration: none;
 }
 
 .header-section {
@@ -140,7 +168,7 @@ main {
   height: 200px;
   max-height: 15%;
   margin: 0 0 30px 0;
-  padding: 50px;
+  padding: 15px;
 }
 
 .header-section p {
@@ -150,7 +178,8 @@ main {
 
 .container {
   box-shadow: 5px 5px 10px #919191;
-  margin: 100px;
+  margin: 50px auto 0 auto;
+  max-width: 1200px;
 }
 
 .product-home img {
