@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&family=Roboto&display=swap");
 
 body {
-  background-color: #c4c4c4;
   margin: 0px;
   padding: 0px;
   font-family: montserrat;
@@ -10,11 +9,33 @@ body {
 
 a {
   text-decoration: none;
+  color: #575757;
+}
+
+.wrapper {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+header {
+  background: #ececec;
+  grid-column: 1/-1;
+  box-shadow: 5px 5px 10px #919191;
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  max-width: 20%;
+  max-height: 9vh;
+  min-width: 9vh;
+  padding: 5px 10px;
+  float: left;
 }
 
 .topnav {
-  position: fixed;
-  align-items: center;
   color: #23405e;
   right: 3rem;
   top: 1.7rem;
@@ -23,66 +44,67 @@ a {
 
 .topnav a {
   color: #23405e;
-  margin-left: 3rem;
-}
-
-.logo {
-  max-width: 9vw;
-  max-height: 9vh;
-  padding: 5px 10px;
-  float: left;
-  position: fixed;
-  z-index: 4;
+  padding: 2rem;
+  float: right;
 }
 
 .searchbar {
-  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 16%;
+  width: 26%;
   background-color: #fff;
   padding: 0.5rem;
-  margin-right: 15rem;
+  margin: 2rem;
   border-radius: 2rem;
   color: #23405e;
   float: right;
-  right: 0rem;
-  top: 2rem;
-  z-index: 3;
+  right: 0%;
+  font-size: 1rem;
 }
 
 input {
-  position: fixed;
   margin: 0 0.5rem 0 0.5rem;
-  width: 9%;
-  right: 16rem;
+  font-size: 1rem;
+  padding: 0;
+  width: 1000%;
   top: 2.5rem;
   border: none;
   outline: none;
   color: #575757;
-  z-index: 3;
 }
 
-.side-box {
-  position: fixed;
-  width: 13%;
-  height: 100%;
-  background-color: #fff;
-  box-shadow: 0px 5px 30px #919191;
+nav {
+  background: #fff;
+  box-shadow: 5px 5px 10px #919191;
+  font-size: 0.7rem;
+  text-align: center;
+  position: relative;
   z-index: 1;
-  top: 4rem;
+}
+
+.navigation {
+  max-width: 60px;
+  position: relative;
+  margin: 1rem;
+}
+
+nav ul {
+  padding: 0;
+  column-count: 2;
+  list-style: none;
+  max-width: 10vw;
 }
 
 .sidebar-socials ul {
-  position: fixed;
-  top: 54rem;
+  position: absolute;
+  top: 49rem;
+
   padding: 3;
-  z-index: 2;
   column-count: 3;
   list-style: none;
   background-color: #ececec;
-  width: 10.9%;
+  width: 100%;
   height: 10%;
   color: #23405e;
 }
@@ -90,128 +112,85 @@ input {
 .socials {
   padding-top: 1.5rem;
   font-size: 1.5rem;
+  margin-left: 1rem;
 }
 
-.navigation {
-  max-width: 80px;
-  padding: 2rem;
-}
-
-.sidenav ul {
-  position: fixed;
-  top: 10rem;
-  padding: 0;
-  z-index: 2;
-  column-count: 2;
-  list-style: none;
-  max-width: 10vw;
-}
-
-nav {
-  background-color: #ececec;
-  min-height: 10vh;
-  min-width: 100%;
-  box-shadow: 5px 5px 10px #919191;
-  position: fixed;
-  z-index: 3;
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
-}
-
-.header-img {
-  max-width: 70%;
-  min-height: 10%;
-  position: relative;
-  margin-left: 22%;
-  margin-right: 20%;
-  margin-top: 10rem;
-}
-
-.main-section {
-  display: block;
-  position: relative;
-  z-index: 2;
-  text-align: center;
-}
-
-.header-txt {
-  position: absolute;
-  top: 50%;
-  left: 55%;
-  transform: translate(-50%, -50%);
-  display: block;
-  margin: 2%;
-  color: #cccccc;
-  font-size: 1.2vw;
+main {
+  background: #f8f8f8;
 }
 
 .cta-button {
+  margin: auto;
   background: #e00087;
   color: #fff;
   border-radius: 2rem;
-  font-size: 1.2vw;
+  font-size: 1rem;
   text-transform: uppercase;
-  padding: 13px 4%;
-  position: absolute;
-  left: 50%;
-  top: 70%;
-  z-index: 3;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  max-width: 19vw;
 }
 
-.center-box {
-  position: absolute;
-  width: 70%;
-  height: 98rem;
-  background-color: #fff;
-  box-shadow: 0px 5px 30px #919191;
-  z-index: 1;
-  top: 15rem;
-  margin-left: 22%;
-  margin-right: 20%;
+.header-section {
+  background-image: url(../images/header-img.jpg);
+  background-size: cover;
+  color: #cccccc;
+  max-width: 100%;
+  height: 200px;
+  max-height: 15%;
+  margin: 0 0 30px 0;
+  padding: 50px;
+}
+
+.header-section p {
+  text-align: center;
+  width: auto;
+}
+
+.container {
+  box-shadow: 5px 5px 10px #919191;
+  margin: 100px;
 }
 
 .product-home img {
-  max-height: 200px;
+  max-height: 20vh;
 }
 
 .product-home .popular {
-  position: relative;
-  z-index: 3;
-  margin-top: 45%;
-  font-size: 1vw;
+  font-size: 1.3vw;
   background-color: #23405e;
-  padding: 0.5rem 0 0.5rem 2rem;
-  color: #c4c4c4;
+  padding: 5px;
+  color: #dcdcdc;
   text-transform: uppercase;
   width: 40%;
+  margin-top: 0;
 }
 
 .popular-products {
   display: inline-block;
   padding: 2rem;
   margin-left: 2.2rem;
+  color: #575757;
+  text-align: center;
 }
 
 .popular-products p {
   background-color: #23405e;
   color: #c4c4c4;
   text-align: center;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   display: inline-block;
-  width: 39.7%;
+  width: 50%;
   margin-top: -1rem;
   font-weight: 600;
 }
 
 .product-home .recent {
-  position: relative;
-  z-index: 3;
-  margin-top: 10%;
-  font-size: 1vw;
+  font-size: 1.3vw;
   background-color: #23405e;
-  padding: 0.5rem 0 0.5rem 2rem;
-  color: #c4c4c4;
+  padding: 5px;
+  color: #dcdcdc;
   text-transform: uppercase;
   width: 40%;
 }
@@ -220,15 +199,17 @@ nav {
   display: inline-block;
   padding: 2rem;
   margin-left: 2.2rem;
+  color: #575757;
+  text-align: center;
 }
 
 .recent-products p {
   background-color: #23405e;
   color: #c4c4c4;
   text-align: center;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   display: inline-block;
-  width: 39.7%;
+  width: 50%;
   margin-top: -1rem;
   font-weight: 600;
 }
