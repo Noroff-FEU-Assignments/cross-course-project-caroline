@@ -67,30 +67,6 @@ input {
   color: #575757;
 }
 
-@media (max-width: 800px) {
-  header {
-    flex-direction: column;
-  }
-
-  .logo {
-    margin-top: 10px;
-  }
-
-  .icons {
-    margin: auto;
-    margin-top: -5px;
-    padding-bottom: 10px;
-  }
-
-  .searchbar {
-    width: 50%;
-  }
-
-  input {
-    font-size: 0.8rem;
-  }
-}
-
 /* Sidebar navigation */
 
 nav {
@@ -178,7 +154,7 @@ main {
 
 .container {
   box-shadow: 5px 5px 10px #919191;
-  margin: 50px auto 0 auto;
+  margin: 50px auto;
   max-width: 1200px;
 }
 
@@ -241,4 +217,46 @@ main {
   width: 50%;
   margin-top: -1rem;
   font-weight: 600;
+}
+
+/* Smaller screen edits */
+
+@media (max-width: 800px) {
+  .logo {
+    margin-top: 10px;
+    width: 100px;
+  }
+
+  .icons,
+  .icons a {
+    font-size: 1.4rem;
+    margin: 10px;
+  }
+
+  .searchbar {
+    width: 50%;
+  }
+
+  input {
+    font-size: 0.8rem;
+  }
+
+  .container {
+    margin: 25px 30px;
+  }
+
+  .cta-button {
+    font-size: 0.7rem;
+    padding: 10px;
+    width: 140px;
+    margin-top: 30px;
+  }
+
+  .header-section p {
+    font-size: 0.8rem;
+  }
+
+  .header-section {
+    height: 150px;
+  }
 }
