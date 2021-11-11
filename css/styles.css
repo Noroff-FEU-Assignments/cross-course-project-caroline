@@ -149,7 +149,8 @@ main {
 
 .header-section p {
   text-align: center;
-  width: auto;
+  max-width: 400px;
+  margin: 30px auto;
 }
 
 .container {
@@ -159,17 +160,18 @@ main {
 }
 
 .product-home img {
-  max-height: 20vh;
+  max-height: 15vh;
 }
 
-.product-home .popular {
-  font-size: 1.3vw;
+.product-home .popular,
+.product-home .recent {
+  font-size: 1.2rem;
   background-color: #23405e;
   padding: 5px;
   color: #dcdcdc;
   text-transform: uppercase;
   width: 40%;
-  margin-top: 0;
+  margin-top: 80px;
 }
 
 .popular-products {
@@ -180,24 +182,19 @@ main {
   text-align: center;
 }
 
-.popular-products p {
+.price-background {
   background-color: #23405e;
-  color: #c4c4c4;
-  text-align: center;
-  padding: 0.5rem 0;
-  display: inline-block;
-  width: 50%;
-  margin-top: -1rem;
-  font-weight: 600;
+  width: 150px;
 }
 
-.product-home .recent {
-  font-size: 1.3vw;
-  background-color: #23405e;
-  padding: 5px;
-  color: #dcdcdc;
-  text-transform: uppercase;
-  width: 40%;
+.popular-products p,
+.recent-products p {
+  color: #c4c4c4;
+  text-align: center;
+  display: inline-block;
+  width: 50%;
+  font-weight: 500;
+  margin: 0px;
 }
 
 .recent-products {
@@ -208,23 +205,18 @@ main {
   text-align: center;
 }
 
-.recent-products p {
-  background-color: #23405e;
-  color: #c4c4c4;
-  text-align: center;
-  padding: 0.5rem 0;
-  display: inline-block;
-  width: 50%;
-  margin-top: -1rem;
-  font-weight: 600;
-}
-
 /* Smaller screen edits */
+
+@media (max-width: 1400px) {
+  .container {
+    margin: 50px;
+  }
+}
 
 @media (max-width: 800px) {
   .logo {
     margin-top: 10px;
-    width: 100px;
+    width: 80px;
   }
 
   .icons,
@@ -254,9 +246,39 @@ main {
 
   .header-section p {
     font-size: 0.8rem;
+    margin: 10px auto;
   }
 
   .header-section {
     height: 150px;
+  }
+
+  .price-background {
+    width: 100px;
+  }
+
+  .product-home .popular,
+  .product-home .recent {
+    font-size: 0.6rem;
+    width: 50%;
+    margin-top: 40px;
+  }
+
+  .popular-products,
+  .recent-products {
+    padding: 0;
+    margin: 1rem;
+    width: 100px;
+  }
+
+  .product-home img {
+    max-height: 10vh;
+  }
+
+  .product-home h3,
+  .product-home p {
+    font-size: 0.6rem;
+    padding: 0.2rem 0;
+    margin: auto;
   }
 }
