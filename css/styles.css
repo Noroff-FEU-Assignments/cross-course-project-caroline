@@ -44,6 +44,8 @@ header {
   margin-right: 0;
 }
 
+/* searchbar */
+
 .searchbar {
   display: flex;
   align-items: center;
@@ -55,6 +57,10 @@ header {
   border-radius: 2rem;
   color: #23405e;
   font-size: 1rem;
+}
+
+.searchbar a {
+  color: #23405e;
 }
 
 input {
@@ -159,6 +165,8 @@ main {
   max-width: 1200px;
 }
 
+/* products front page */
+
 .product-home img {
   max-height: 15vh;
 }
@@ -168,7 +176,7 @@ main {
   font-size: 1.2rem;
   background-color: #23405e;
   padding: 5px;
-  color: #dcdcdc;
+  color: #fff;
   text-transform: uppercase;
   width: 40%;
   margin-top: 80px;
@@ -189,7 +197,7 @@ main {
 
 .popular-products p,
 .recent-products p {
-  color: #c4c4c4;
+  color: #dcdcdc;
   text-align: center;
   display: inline-block;
   width: 50%;
