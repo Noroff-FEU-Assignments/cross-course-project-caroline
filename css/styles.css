@@ -372,6 +372,10 @@ p.search-result {
 }
 
 @media (max-width: 800px) {
+  .container {
+    margin: 0;
+  }
+
   .wrapper {
     grid-template-columns: 1fr;
   }
@@ -419,10 +423,6 @@ p.search-result {
 
   input {
     font-size: 0.8rem;
-  }
-
-  .container {
-    margin: 25px 30px;
   }
 
   .content-contain {
@@ -474,12 +474,11 @@ p.search-result {
     margin: auto;
   }
 
-  /* products game page */
-
-  .gamepage .container {
-    margin: 20px auto;
-    width: 300px;
+  p.search-result {
+    margin: 0;
   }
+
+  /* products game page */
 
   .gamepage h1 {
     font-size: 1rem;
