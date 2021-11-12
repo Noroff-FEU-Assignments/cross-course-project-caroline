@@ -492,9 +492,14 @@ p.search-result {
     margin-top: 3px;
   }
 
+  .gametitle {
+    margin: 6px 0 0 0;
+  }
+
   .gamepage .cta-button {
     width: 80px;
     font-size: 0.5rem;
+    margin-top: 25px;
   }
 
   .gamepage img {
