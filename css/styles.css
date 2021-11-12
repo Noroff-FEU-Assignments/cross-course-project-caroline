@@ -372,10 +372,6 @@ p.search-result {
 }
 
 @media (max-width: 800px) {
-  .container {
-    margin: 0;
-  }
-
   .wrapper {
     grid-template-columns: 1fr;
   }
@@ -423,6 +419,10 @@ p.search-result {
 
   input {
     font-size: 0.8rem;
+  }
+
+  .container {
+    margin: 25px 30px;
   }
 
   .content-contain {
@@ -474,11 +474,12 @@ p.search-result {
     margin: auto;
   }
 
-  p.search-result {
-    margin: 0;
-  }
-
   /* products game page */
+
+  .gamepage .container {
+    margin: 20px auto;
+    width: 270px;
+  }
 
   .gamepage h1 {
     font-size: 1rem;
@@ -537,7 +538,7 @@ p.search-result {
   }
 
   .genre-list li {
-    padding: 0px 15px 20px 0;
+    padding: 0px 20px 20px 0;
   }
 
   .pegi ul,
