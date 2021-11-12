@@ -7,6 +7,10 @@ body {
   font-size: 1rem;
 }
 
+body a {
+  text-decoration: none;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -84,8 +88,8 @@ nav {
   width: 180px;
 }
 
-nav a {
-  text-decoration: none;
+nav a,
+.product-home a {
   color: #575757;
 }
 
@@ -123,7 +127,6 @@ main {
   display: flex;
   justify-content: center;
   width: 170px;
-  text-decoration: none;
 }
 
 .header-section {
@@ -147,17 +150,13 @@ main {
   box-shadow: 5px 5px 10px #919191;
   margin: 50px auto;
   max-width: 1200px;
+  background-color: #fff;
 }
 
 /* products front page */
 
 .product-home img {
   max-height: 15vh;
-}
-
-.product-home a {
-  text-decoration: none;
-  color: #575757;
 }
 
 .product-home .popular,
@@ -306,7 +305,11 @@ p.search-result {
   padding: 0px 50px 40px 0;
 }
 
-/* Signup page */
+/* Signup and chekout page */
+
+.signup .container {
+  height: 80vh;
+}
 
 .signup {
   background-image: url(../images/background-img.jpg);
@@ -321,10 +324,16 @@ p.search-result {
   margin-top: 200px;
 }
 
-.name,
-.email,
-.password,
-.repeatpassword {
+.checkout h1,
+.checkout h2 {
+  color: #575757;
+  margin-top: 20px;
+  padding-top: 40px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.form {
   display: flex;
   width: 400px;
   height: 40px;
@@ -333,17 +342,55 @@ p.search-result {
   padding: 10px 0;
 }
 
+.country {
+  display: flex;
+  justify-content: center;
+}
+
+.select {
+  padding: 10px 5px;
+  border-radius: 3px;
+  width: 384px;
+  color: #575757;
+  font-family: montserrat;
+  font-size: 1rem;
+  border: 1px solid #bbbbbb;
+}
+
+.select:focus {
+  outline: none;
+  border: 2px solid #999999;
+}
+
 .password {
   padding: 10px 0 0 0;
 }
 
-.signup input {
+.temporary img {
+  width: 200px;
+}
+
+.temporary {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.payment input {
+  display: inline-block;
+  width: 100px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.signup input,
+.payment input {
   border-radius: 2px;
   padding-left: 10px;
+  border: 1px solid #bbbbbb;
 }
 
 .signup-cta a {
-  text-decoration: none;
   color: #d8d8d8;
   margin: 20px auto;
   text-transform: uppercase;
@@ -357,7 +404,7 @@ p.search-result {
   background: #e00087;
   border-radius: 3px;
   font-size: 1.9rem;
-  margin: 20px auto;
+  margin: 20px auto 30px auto;
 }
 
 /* Smaller screen edits */

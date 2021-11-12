@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Create an account with Game Hub to gather points for purchases, as well as selling your old games!"/>
+    <meta name="description" content="A compelte online checkout, you can pay with either paypal, debit or klarna!"/>
     <link href="css/styles.css" rel="stylesheet">
-    <title>Game Hub | Sign Up</title>
+    <title>Game Hub | Checkout</title>
     <script src="https://kit.fontawesome.com/0ccd0d2023.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -39,27 +39,50 @@
             </ul> 
         </div>
     </nav>
-<main class="signup">
-    <h1>Create new account</h1>
-    <section>
+<main class="signup checkout">
+    <section class="container">
+    <h1>Checkout</h1>
         <form>
+           <div class="country">
+                <select name="countries" id="countries" class="select">
+                    <option disabled selected>Choose country...</option>
+                    <option value="Norway">Norway</option>
+                    <option value="Denmark">Denmark</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="Finland">Finland</option>
+                </select>
+           </div>
            <div class="form">
                 <input type="text" name="firstname" placeholder="First Name">
                 <input type="text" name="lastname" placeholder="Last Name">
             </div>
             <div class="form">
-                <input type="email" name="email" placeholder="Email">
-            </div>
-            <div class="form">    
-                <input type="password" name="password" placeholder="Password">
+                <input type="adress" name="adress" placeholder="Street Adress">
             </div>
             <div class="form">
-                <input type="password" name="password" placeholder="Repeat Password"> 
-            </div>    
-        </form>       
-    </section>
+                <input type="text" name="zip" placeholder="Zip">
+                <input type="text" name="region" placeholder="State/Province/Region">
+            </div>
+            <div class="form">
+                <input type="tel" name="number" placeholder="Phone number (optional)"> 
+            </div> 
+            <div class="form">    
+                <input type="email" name="email" placeholder="Email">
+            </div> 
+         
+        <h2>Payment Options</h2>    
+        <div class="temporary"><img src="/icons/temporary-buttons.png"></div>
+        <div class="form">
+            <input type="number" name="cardnumber" placeholder="Card Number">
+        </div>
+        <div class="form">
+            <input type="date" name="firstname" placeholder="First Name">
+            <input type="text" name="security" placeholder="Security Code">
+        </div>
+    </form> 
     <section class="signup-cta">
-        <a href="profile.html" class="cta-two">Create</a>
+        <a href="profile.html" class="cta-two">Checkout</a>
+    </section>
     </section>
 </main>
 </div>
