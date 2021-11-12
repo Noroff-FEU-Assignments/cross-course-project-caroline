@@ -306,6 +306,60 @@ p.search-result {
   padding: 0px 50px 40px 0;
 }
 
+/* Signup page */
+
+.signup {
+  background-image: url(../images/background-img.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.signup h1 {
+  color: #d8d8d8;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 200px;
+}
+
+.name,
+.email,
+.password,
+.repeatpassword {
+  display: flex;
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+  margin: auto;
+  padding: 10px 0;
+}
+
+.password {
+  padding: 10px 0 0 0;
+}
+
+.signup input {
+  border-radius: 2px;
+  padding-left: 10px;
+}
+
+.signup-cta a {
+  text-decoration: none;
+  color: #d8d8d8;
+  margin: 20px auto;
+  text-transform: uppercase;
+}
+
+.cta-two {
+  display: flex;
+  justify-content: center;
+  width: 376px;
+  padding: 5px;
+  background: #e00087;
+  border-radius: 3px;
+  font-size: 1.9rem;
+  margin: 20px auto;
+}
+
 /* Smaller screen edits */
 
 @media (max-width: 1400px) {
@@ -474,7 +528,7 @@ p.search-result {
     margin: auto;
   }
 
-  /* products game page */
+  /* products game page phone */
 
   .gamepage .container {
     margin: 20px auto;
@@ -532,6 +586,11 @@ p.search-result {
   .gamepage h2 {
     font-size: 0.7rem;
     width: 100%;
+    margin-top: 30px;
+  }
+
+  .gamepage p {
+    margin-bottom: 20px;
   }
 
   .gamepage h3 {
@@ -553,5 +612,23 @@ p.search-result {
     display: flex;
     margin: 0 7px 10px 0;
     padding: 0;
+  }
+
+  /* Signup page phone */
+
+  .name,
+  .email,
+  .password,
+  .repeatpassword {
+    width: 300px;
+  }
+
+  .signup h1 {
+    font-size: 1.5rem;
+    margin-top: 100px;
+  }
+
+  .cta-two {
+    width: 277px;
   }
 }
