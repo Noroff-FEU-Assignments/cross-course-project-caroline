@@ -369,6 +369,25 @@ p.search-result {
     padding: 0.2rem 0;
     margin: auto;
   }
+
+  .gamepage img {
+    width: 200px;
+    margin: 20px 80px 20px 0;
+  }
+
+  .content-contain ul {
+    padding: 0 0 20px 0;
+  }
+
+  .favourites,
+  .fa-heart {
+    font-size: 0.9rem;
+    margin-right: 5px;
+  }
+
+  .favourites {
+    margin-left: 5px;
+  }
 }
 
 @media (max-width: 30px) {
