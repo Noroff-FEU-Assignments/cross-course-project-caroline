@@ -426,7 +426,7 @@ p.search-result {
   }
 
   .content-contain {
-    max-width: 800;
+    max-width: 300px;
   }
 
   .cta-button {
