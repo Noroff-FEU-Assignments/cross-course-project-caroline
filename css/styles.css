@@ -396,7 +396,8 @@ p.search-result {
   text-transform: uppercase;
 }
 
-.cta-two {
+.cta-two,
+.cta-three {
   display: flex;
   justify-content: center;
   width: 376px;
@@ -405,6 +406,53 @@ p.search-result {
   border-radius: 3px;
   font-size: 1.9rem;
   margin: 20px auto 30px auto;
+}
+
+/* checkout success */
+
+.success-page {
+  width: 800px;
+  margin: auto;
+}
+
+.success-page .cta-two,
+.success-page .cta-three {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  width: 330px;
+  padding: 15px 0;
+  margin: 90px auto 30px auto;
+}
+
+.success-page h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.success-page p {
+  text-align: center;
+}
+
+.cta-three {
+  background: #23405e;
+}
+
+.check {
+  width: 100px;
+}
+
+.success {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.success-page a {
+  color: #fff;
+}
+
+.success-cta {
+  display: flex;
 }
 
 /* Smaller screen edits */
@@ -523,7 +571,8 @@ p.search-result {
   }
 
   .container {
-    margin: 25px 30px;
+    margin: auto;
+    max-width: 280px;
   }
 
   .content-contain {
@@ -663,11 +712,26 @@ p.search-result {
 
   /* Signup page phone */
 
-  .name,
-  .email,
-  .password,
-  .repeatpassword {
+  .form {
     width: 300px;
+  }
+
+  .checkout .form {
+    width: 250px;
+  }
+
+  .checkout input {
+    font-size: 0.7rem;
+    padding-left: 3px;
+    margin: 0 5px;
+  }
+
+  .select {
+    width: 240px;
+  }
+
+  .signup {
+    height: 170vh;
   }
 
   .signup h1 {
@@ -675,8 +739,51 @@ p.search-result {
     margin-top: 100px;
   }
 
+  .signup .container {
+    height: 145vh;
+  }
+
   .cta-two {
-    width: 277px;
+    width: 230px;
     font-size: 1.5rem;
+  }
+
+  /* success page */
+
+  .success-page {
+    width: 250px;
+  }
+
+  .success-page h1 {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+
+  .success {
+    padding-top: 50px;
+    margin-top: 80px;
+  }
+
+  .check {
+    width: 50px;
+  }
+
+  .success-page p {
+    font-size: 0.6rem;
+  }
+
+  .success-page .cta-two,
+  .success-page .cta-three {
+    font-size: 0.5rem;
+    width: 100px;
+    margin-top: 30px;
+  }
+
+  .checkout .container {
+    height: 60vh;
+  }
+
+  .checkout {
+    height: 90vh;
   }
 }
