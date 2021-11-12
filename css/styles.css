@@ -223,7 +223,6 @@ p.search-result {
 
 .content-contain {
   margin: auto;
-  padding: 50px;
   display: flex;
 }
 
@@ -369,9 +368,13 @@ p.search-result {
     margin: auto;
   }
 
+  .content-contain {
+    margin-right: 10px;
+  }
+
   .gamepage img {
     width: 150px;
-    margin: 20px 80px 20px 0;
+    margin: 20px 60px 20px 10px;
   }
 
   .content-contain ul {
