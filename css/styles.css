@@ -121,7 +121,6 @@ main {
   font-size: 1rem;
   text-transform: uppercase;
   padding: 15px;
-
   display: flex;
   justify-content: center;
   width: 170px;
@@ -314,6 +313,7 @@ p.search-result {
   .recent-products {
     margin: auto;
     width: 100px;
+    padding: 1.7rem;
   }
 
   .product-home img {
