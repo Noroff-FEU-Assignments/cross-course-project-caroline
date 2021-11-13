@@ -312,9 +312,14 @@ p.search-result {
 }
 
 .signup {
-  background-image: url(../images/background-img.jpg);
   background-size: cover;
   height: 100vh;
+}
+
+.signup,
+.checkout,
+.confirmed {
+  background-image: url(../images/background-img.jpg);
 }
 
 .signup h1 {
@@ -736,7 +741,8 @@ p.search-result {
 
   .signup h1 {
     font-size: 1.5rem;
-    margin-top: 100px;
+    margin-top: 0;
+    padding-top: 60px;
   }
 
   .signup .container {
