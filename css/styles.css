@@ -571,8 +571,8 @@ p.search-result {
   }
 
   .container {
-    margin: auto;
-    max-width: 280px;
+    margin: 30px auto 30px auto;
+    max-width: 300px;
   }
 
   .content-contain {
@@ -609,7 +609,7 @@ p.search-result {
   .popular-products,
   .recent-products {
     margin: auto;
-    width: 100px;
+    width: 90px;
     padding: 1.7rem;
   }
 
@@ -780,10 +780,20 @@ p.search-result {
   }
 
   .checkout .container {
-    height: 60vh;
+    height: 100vh;
   }
 
   .checkout {
-    height: 90vh;
+    height: 120vh;
+  }
+
+  .confirmed .container {
+    height: 40vh;
+  }
+
+  .confirmed,
+  .signup {
+    background-image: url(../images/background-img.jpg);
+    height: 80vh;
   }
 }
