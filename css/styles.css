@@ -66,7 +66,8 @@ header {
   color: #23405e;
 }
 
-input {
+input,
+textarea {
   margin: 0 0.5rem 0 0.5rem;
   font-size: 1rem;
   padding: 0;
@@ -335,7 +336,8 @@ p.search-result {
 }
 
 .checkout h1,
-.checkout h2 {
+.checkout h2,
+.confirmed h1 {
   color: #575757;
   margin-top: 20px;
   padding-top: 40px;
@@ -355,6 +357,7 @@ p.search-result {
 .form-input {
   border: 1px solid #bbbbbb;
   padding-left: 5px;
+  font-family: montserrat;
 }
 
 .country {
@@ -439,6 +442,10 @@ p.search-result {
 
 /* checkout success */
 
+.confirmed .container {
+  height: 800px;
+}
+
 .success-page {
   width: 800px;
   margin: auto;
@@ -451,6 +458,7 @@ p.search-result {
   width: 330px;
   padding: 15px 0;
   margin: 90px auto 30px auto;
+  color: #e6e6e6;
 }
 
 .success-page h1 {
@@ -482,6 +490,10 @@ p.search-result {
 
 .success-cta {
   display: flex;
+}
+
+.contact-page h1 {
+  padding-top: 100px;
 }
 
 /* Profile */
@@ -1060,11 +1072,14 @@ input:checked + .slider:before {
     padding: 0;
   }
 
-  .checkout .form {
+  .checkout .form,
+  .contact-page .form {
     width: 250px;
   }
 
-  .checkout input {
+  .checkout input,
+  .contact-page input,
+  .contact-page textarea {
     font-size: 0.7rem;
     padding: 10px;
     margin: 0 5px;
@@ -1086,6 +1101,10 @@ input:checked + .slider:before {
     font-size: 1.5rem;
     margin-top: 0;
     padding-top: 60px;
+  }
+
+  .signup input {
+    margin-bottom: 15px;
   }
 
   .signup .container {
@@ -1129,20 +1148,47 @@ input:checked + .slider:before {
   }
 
   .checkout .container {
-    height: 105vh;
+    height: 850px;
   }
 
   .checkout {
-    height: 120vh;
+    height: 900px;
   }
 
   .confirmed .container {
-    height: 40vh;
+    height: 320px;
   }
 
   .confirmed,
   .signup {
     background-image: url(../images/background-img.jpg);
     height: 80vh;
+  }
+
+  /* profile page mobile */
+
+  .profile-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 1.7fr 1.7fr;
+    gap: 30px 30px;
+    grid-template-areas:
+      "profile-nav profile-nav"
+      "profile-picture listings"
+      "profile-content profile-content";
+  }
+
+  /* contact page mobile */
+
+  .contact-page h1 {
+    padding: 20px 0;
+  }
+
+  .contact .container {
+    height: 360px;
+  }
+
+  .contact-page .cta-two {
+    margin-top: 10px;
+    padding: 0;
   }
 }
