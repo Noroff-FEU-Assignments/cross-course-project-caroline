@@ -661,7 +661,8 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.linebreak img {
+.linebreak {
+  background-image: url(../images/linebreak.png);
   display: flex;
   width: 600px;
   margin: 0 auto 50px auto;
