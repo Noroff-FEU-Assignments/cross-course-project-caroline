@@ -1,98 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="create a listing, check your points or manage your orders all from your personal profile!"/>
-    <link href="css/styles.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="create a listing, check your points or manage your orders all from your personal profile!"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
     <title>Game Hub | Profile</title>
-    <script src="https://kit.fontawesome.com/0ccd0d2023.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<div class="wrapper">
-    <header>
-         <div>
-             <a href="index.html"><img src="/images/GameHub_Logo_Gradient.png" alt="game hub logo" class="logo"></a>
-         </div>
-         <div class="searchbar">
-             <a href="search-page.html"><div class="fa fa-search"></div></a>
-              <input type="text" placeholder="search the universe...">
-              <div class="fa fa-times"></div>
-         </div>
-           <div class="icons">
-            <a href="checkout.html"><i class="fas fa-shopping-cart" alt="checkout"></i></a>              
-            <a href="signup.html"><i class="fas fa-user-circle" alt="sign up"></i></a>                             
-       </div>    
-    </header>
-    <nav>
-        <div class="nav-container">
-            <ul>
-                <li><a href="search-page.html"><img src="../icons/Playstation.png" alt="Playstation games" class="navigation">Playstation</a></li>
-                <li><a href="search-page.html"><img src="../icons/Xbox.png" alt="Xbox games" class="navigation">Xbox</a></li>
-                <li><a href="search-page.html"><img src="../icons/Switch.png" alt="Switch games" class="navigation">Switch</a></li>
-                <li><a href="search-page.html"><img src="../icons/Menu_3DS.png" alt="3DS games" class="navigation">3DS</a></li>
-                <li><a href="search-page.html"><img src="../icons/Retro.png" alt="Retro games" class="navigation">Retro</a></li>
-                <li><a href="search-page.html"><img src="../icons/Menu_Consoles.png" alt="Buy consoles" class="navigation">Consoles</a></li>
-                <li><a href="search-page.html"><img src="../icons/Sale.png" alt="Sale" class="navigation">Sale</a></li>
-                <li><a href="contact.html"><img src="../icons//CustomerService.png" alt="Contact" class="navigation">Contact</a></li>
-            </ul> 
+    <script
+      src="https://kit.fontawesome.com/0ccd0d2023.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Hotjar Tracking Code for https://competent-hawking-a8bf56.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2895156, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div>
+          <a href="index.html"
+            ><img
+              src="/images/GameHub_Logo_Gradient.png"
+              alt="game hub logo"
+              class="logo"
+          /></a>
         </div>
-    </nav>
-<main class="profile">
-    <section class="profile-container">
-        <div class="profile-grid">
+        <div class="searchbar">
+          <a href="search-page.html"><div class="fa fa-search"></div></a>
+          <input type="text" placeholder="search the universe..." />
+          <div class="fa fa-times"></div>
+        </div>
+        <div class="icons">
+          <a href="checkout.html"
+            ><i class="fas fa-shopping-cart" alt="checkout"></i
+          ></a>
+          <a href="signup.html"
+            ><i class="fas fa-user-circle" alt="sign up"></i
+          ></a>
+        </div>
+      </header>
+      <nav>
+        <div class="nav-container">
+          <ul>
+            <li>
+              <a href="search-page.html"
+                ><img
+                  src="../icons/Playstation.png"
+                  alt="Playstation games"
+                  class="navigation"
+                />Playstation</a
+              >
+            </li>
+            <li>
+              <a href="search-page.html"
+                ><img
+                  src="../icons/Xbox.png"
+                  alt="Xbox games"
+                  class="navigation"
+                />Xbox</a
+              >
+            </li>
+            <li>
+              <a href="search-page.html"
+                ><img
+                  src="../icons/Switch.png"
+                  alt="Switch games"
+                  class="navigation"
+                />Switch</a
+              >
+            </li>
+            <li>
+              <a href="search-page.html"
+                ><img
+                  src="../icons/Menu_3DS.png"
+                  alt="3DS games"
+                  class="navigation"
+                />3DS</a
+              >
+            </li>
+            <li>
+              <a href="search-page.html"
+                ><img
+                  src="../icons/Retro.png"
+                  alt="Retro games"
+                  class="navigation"
+                />Retro</a
+              >
+            </li>
+            <li>
+              <a href="search-page.html"
+                ><img
+                  src="../icons/Menu_Consoles.png"
+                  alt="Buy consoles"
+                  class="navigation"
+                />Consoles</a
+              >
+            </li>
+            <li>
+              <a href="search-page.html"
+                ><img
+                  src="../icons/Sale.png"
+                  alt="Sale"
+                  class="navigation"
+                />Sale</a
+              >
+            </li>
+            <li>
+              <a href="contact.html"
+                ><img
+                  src="../icons//CustomerService.png"
+                  alt="Contact"
+                  class="navigation"
+                />Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main class="profile">
+        <section class="profile-container">
+          <div class="profile-grid">
             <div class="profile-nav">
-               <a href="profile.html">Account Page</a>
-               <a href="#">My Orders</a>
-               <a href="contact.html">Customer Service</a>
-               <a href="#">My Points</a>
+              <a href="profile.html">Account Page</a>
+              <a href="#">My Orders</a>
+              <a href="contact.html">Customer Service</a>
+              <a href="#">My Points</a>
             </div>
             <div class="profile-content">
-                <div class="content-container">
-                    <h1>Contact Info</h1>
-                    <section class="info">
-                        <div><h2>Name</h2><p>Jane Doe</p></div>
-                        <div><h2>Email</h2><p>jane_doe@hotmail.com</p></div>
-                        <div><h2>Adress</h2><p>123 Sesame Street</p></div>
-                        <div><h2>Number</h2><p>+77 98765432</p></div>
-                    </section>
-                    <p class="edit-profile"><i class="fas fa-pencil-alt"></i>Edit</p>
-                    <div class="newsletter">
-                        <p>Recieve news and and limited offers by signing up to our newsletter</p>
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
-                    <div class="linebreak"></div>
-                    <h3>my favourites</h3>
-                    <div class="favourite-games">
-                        <a href="game-page.html"><img src="/product-images/cyberpunk.jpg" alt="cyberpunk cover"><p>Cyberpunk</p></a>
-                        <a href="game-page.html"><img src="/product-images/forgelegend.jpg" alt="forge legend cover"><p>Forge legend</p></a>
+              <div class="content-container">
+                <h1>Contact Info</h1>
+                <section class="info">
+                  <div>
+                    <h2>Name</h2>
+                    <p>Jane Doe</p>
+                  </div>
+                  <div>
+                    <h2>Email</h2>
+                    <p>jane_doe@hotmail.com</p>
+                  </div>
+                  <div>
+                    <h2>Adress</h2>
+                    <p>123 Sesame Street</p>
+                  </div>
+                  <div>
+                    <h2>Number</h2>
+                    <p>+77 98765432</p>
+                  </div>
+                </section>
+                <p class="edit-profile">
+                  <i class="fas fa-pencil-alt"></i>Edit
+                </p>
+                <div class="newsletter">
+                  <p>
+                    Recieve news and and limited offers by signing up to our
+                    newsletter
+                  </p>
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                  </label>
                 </div>
-            </div>
+                <div class="linebreak"></div>
+                <h3>my favourites</h3>
+                <div class="favourite-games">
+                  <a href="game-page.html"
+                    ><img
+                      src="/product-images/cyberpunk.jpg"
+                      alt="cyberpunk cover"
+                    />
+                    <p>Cyberpunk</p></a
+                  >
+                  <a href="game-page.html"
+                    ><img
+                      src="/product-images/forgelegend.jpg"
+                      alt="forge legend cover"
+                    />
+                    <p>Forge legend</p></a
+                  >
+                </div>
+              </div>
             </div>
             <div class="profile-picture">
-                <img src="/images/close-up-woman-holding-controller_23-2149005235.jpg" alt="your profile picture" class="profilepic">
-                <p class="points"><i class="fas fa-gamepad"></i>720</p>
+              <img
+                src="/images/close-up-woman-holding-controller_23-2149005235.jpg"
+                alt="your profile picture"
+                class="profilepic"
+              />
+              <p class="points"><i class="fas fa-gamepad"></i>720</p>
             </div>
             <div class="listings">
-                <div class="listings-grid">
-                    <div class="my-listings">
-                        <h3>My Listings</h3><i class="fas fa-plus"></i>
-                    </div>
-                    <div class="all-listings"><p>2</p><p>Active</p></div>
-                    <div class="all-listings"><p>3</p><p>Sold</p></div>
-                    <div class="all-listings"><p>5</p><p>Total</p></div>
-                    <div class="listing-one"><a href="game-page.html"><img src="/product-images/zelda.jpg" alt="picture of zelda ocarina of time">Zelda ocarina of time</a></div>
-                    <div class="listing-two"><a href="game-page.html"><img src="/product-images/pokemon.jpg" alt="picture of pokemon alpha sapphire">Pokemon alpha sapphire</a></div>
+              <div class="listings-grid">
+                <div class="my-listings">
+                  <h3>My Listings</h3>
+                  <i class="fas fa-plus"></i>
                 </div>
+                <div class="all-listings">
+                  <p>2</p>
+                  <p>Active</p>
+                </div>
+                <div class="all-listings">
+                  <p>3</p>
+                  <p>Sold</p>
+                </div>
+                <div class="all-listings">
+                  <p>5</p>
+                  <p>Total</p>
+                </div>
+                <div class="listing-one">
+                  <a href="game-page.html"
+                    ><img
+                      src="/product-images/zelda.jpg"
+                      alt="picture of zelda ocarina of time"
+                    />Zelda ocarina of time</a
+                  >
+                </div>
+                <div class="listing-two">
+                  <a href="game-page.html"
+                    ><img
+                      src="/product-images/pokemon.jpg"
+                      alt="picture of pokemon alpha sapphire"
+                    />Pokemon alpha sapphire</a
+                  >
+                </div>
+              </div>
             </div>
             <div class="footer"></div>
-        </div>
-    </section>
-</main>
-</div>
-</body>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
