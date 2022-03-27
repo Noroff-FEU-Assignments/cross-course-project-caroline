@@ -138,23 +138,26 @@
         <section class="container">
           <section class="success-page contact-page">
             <h1>Contact Us</h1>
-            <form>
+            <p>Fields marked with * is required</p>
+            <form class="form-all">
               <div class="form">
                 <input
                   type="text"
                   name="fullname"
-                  placeholder="Full Name"
-                  class="form-input"
+                  placeholder="Full Name *"
+                  class="form-input fullname"
                 />
               </div>
+              <div class="fullname-error">*Please enter your full name</div>
               <div class="form">
                 <input
                   type="email"
                   name="email"
-                  placeholder="Email"
-                  class="form-input"
+                  placeholder="Email *"
+                  class="form-input email"
                 />
               </div>
+              <div class="email-error">*Please enter a valid email</div>
               <div class="form">
                 <input
                   type="number"
@@ -167,9 +170,12 @@
                 <textarea
                   id="message"
                   name="message"
-                  placeholder="Message"
-                  class="form-input"
+                  placeholder="Message *"
+                  class="form-input message"
                 ></textarea>
+              </div>
+              <div class="message-error">
+                *Please enter more than 10 characters
               </div>
               <div class="success-cta">
                 <input type="submit" value="Send" class="cta-two" />
@@ -179,5 +185,6 @@
         </section>
       </main>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

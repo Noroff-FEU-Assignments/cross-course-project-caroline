@@ -345,6 +345,15 @@ p.search-result {
   font-weight: 600;
 }
 
+.fullname-error,
+.email-error,
+.message-error {
+  display: none;
+  padding-bottom: 20px;
+  margin: 0 110px;
+  color: red;
+}
+
 .form {
   display: flex;
   width: 600px;
@@ -1076,6 +1085,13 @@ input:checked + .slider:before {
   .checkout .form,
   .contact-page .form {
     width: 250px;
+  }
+
+  .fullname-error,
+  .email-error,
+  .message-error {
+    font-size: 0.7rem;
+    margin: 0 10px;
   }
 
   .checkout input,
