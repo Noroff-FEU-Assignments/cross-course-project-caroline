@@ -8,6 +8,11 @@ const fullnameError = document.querySelector(".fullname-error")
 const messageError = document.querySelector(".message-error")
 const emailError = document.querySelector(".email-error")
 
+const cartCount = document.querySelector(".counter")
+const cartButton = document.querySelector(".cart-button")
+
+/* Form Validation */
+
 function validateForm () {
     event.preventDefault();
 
@@ -46,3 +51,13 @@ function emailValidation(email) {
     return patternMatch;
 
 }
+
+
+/* Cart function */
+
+cartButton.onclick = function() {
+    count += 1;
+    cartCount.innerHTML = 0 + count;
+}; 
+
+

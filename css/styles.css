@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&family=Roboto&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -15,6 +19,55 @@ body a {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: auto 1fr;
+}
+
+footer {
+  background-color: #f0f0f0;
+  color: #575757;
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 5%;
+  line-height: 1;
+}
+
+footer img {
+  max-height: 120px;
+  margin: auto 0;
+}
+
+.contact-group {
+  line-height: 0.2;
+  padding: 2px 0;
+}
+
+footer a {
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-top img {
+  max-width: 80px;
+}
+
+.breadcrumbs,
+.breadcrumbs-alternate,
+.breadcrumbs-alternate a,
+.breadcrumbs a {
+  color: #575757;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.breadcrumbs-alternate,
+.breadcrumbs-alternate a {
+  color: #dcdcdc;
+}
+
+.breadcrumbs a,
+.breadcrumbs-alternate a {
+  text-decoration: underline;
 }
 
 /* Top logo + navigation */
@@ -157,7 +210,7 @@ main {
 /* products front page */
 
 .product-home img {
-  max-height: 15vh;
+  max-height: 20vh;
 }
 
 .product-home .popular,
@@ -189,6 +242,68 @@ main {
 .price-background {
   background-color: #23405e;
   width: 150px;
+}
+
+.price,
+.cart-button {
+  background-color: #23405e;
+  color: #dcdcdc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding: 5px 10px;
+}
+
+.counter {
+  display: flex;
+  background-color: #e00087;
+  color: white;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+  padding: 10px;
+  max-height: 1px;
+  max-width: 1px;
+}
+
+.game-container {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1.5fr 0.1fr 1.6fr;
+  grid-template-rows: 0.4fr 0.3fr 0.3fr;
+  gap: 3px 3px;
+  grid-template-areas:
+    "title title title"
+    "price . cart-button"
+    "condition . condition-var";
+}
+.title {
+  grid-area: title;
+  display: flex;
+  justify-content: flex-start;
+}
+.price {
+  grid-area: price;
+}
+.cart-button {
+  grid-area: cart-button;
+}
+.condition {
+  grid-area: condition;
+  padding-top: 10px;
+}
+.condition-var {
+  grid-area: condition-var;
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  all: unset;
 }
 
 .popular-products p,
@@ -252,13 +367,13 @@ p.search-result {
   margin-right: 10px;
 }
 
-.price {
+/* .price {
   color: #dcdcdc;
   font-size: 1.2rem;
   font-weight: 600;
   padding: 5px 10px;
   margin-top: 10px;
-}
+} */
 
 .gamepage .price-background {
   width: 54px;
@@ -507,8 +622,11 @@ p.search-result {
 
 /* Profile */
 
-.profile a,
 .profile {
+  color: #575757;
+}
+
+.my-listings a {
   color: #575757;
 }
 
@@ -882,6 +1000,19 @@ input:checked + .slider:before {
     display: flex;
     margin: 0 7px 10px 0;
     padding: 0;
+  }
+
+  footer img {
+    max-height: 70px;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    line-height: 0.1;
+  }
+
+  .scroll-top img {
+    max-height: 40px;
   }
 }
 
