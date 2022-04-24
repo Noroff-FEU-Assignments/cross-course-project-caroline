@@ -1,3 +1,5 @@
+const url = "https://www.pixilates.no/wp-json/wc/store/products?consumer_key=ck_9a8fecccac526424fc8897fe3346b592221bc21e&consumer_secret=cs_c9886fee52662a04e6dd6474bdac6551af80c82e";
+
 const form = document.querySelector(".form-all");
 
 const fullname = document.querySelector(".fullname")
@@ -60,4 +62,41 @@ cartButton.onclick = function() {
     cartCount.innerHTML = 0 + count;
 }; 
 
+
+/* Products */
+
+const container = document.querySelector(".popular-products")
+
+async function getProducts(){
+    try{
+        const response = await fetch(url);
+        const results = await response.json();
+        createHTML(results);
+
+        console.log(results)
+        }
+
+    catch(error){
+        console.log(error);
+    }
+}
+
+getProducts();
+
+function createHTML(products){
+    products.forEach(function(product){
+        container.innerHTML += 
+        `<a href="game-page.html">
+              <div class="img"><img src="${product.images[0].src}" alt=""/></div>
+          </a>
+              <div class="game-container">
+                  <div class="title"><h3>${product.name}</h3></div>
+                  <div class="price">${product.prices.price}</div>
+                  <button class="cart-button">Add to Cart</button>
+                  <div class="condition">Condition:</div>
+                  <div class="condition-var">New</div>
+              </div>
+              </div>`;
+    })
+};
 
